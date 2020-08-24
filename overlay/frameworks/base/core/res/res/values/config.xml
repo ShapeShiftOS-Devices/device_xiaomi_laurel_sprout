@@ -566,4 +566,7 @@
        <item>12</item>
    </integer-array>
 
+    <!-- Screen off FOD -->
+    <bool name="config_supportScreenOffFod">true</bool>
+
 </resources>
