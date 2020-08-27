@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 CUSTOM_BUILD_TYPE := OFFICIAL
-TARGET_LAUNCHER_CHOICE := pixel
+TARGET_LAUNCHER_CHOICE := oplauncher
 
 # Inherit from laurel_sprout device
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
@@ -31,7 +31,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="laurel_sprout-user 10 QKQ1.190910.002 V11.0.15.0.QFQMIXM release-keys" \
