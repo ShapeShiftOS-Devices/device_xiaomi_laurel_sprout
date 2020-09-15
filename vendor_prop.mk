@@ -26,6 +26,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.deep_buffer.media=true \
     audio.offload.min.duration.secs=30 \
     audio.offload.video=true \
+    audio.offload.disable=0 \
     audio.sys.noisy.broadcast.delay=600 \
     audio.sys.offload.pstimeout.secs=3 \
     persist.audio.fluence.voicecomm=true \
@@ -146,7 +147,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_force_split=0 \
     vendor.display.enable_null_display=0 \
     vendor.display.enable_optimize_refresh=1 \
-    vendor.gralloc.disable_ubwc=0
+    debug.gralloc.enable_fb_ubwc=1 \
+    vendor.gralloc.enable_fb_ubwc=1 \
+    vendor.video.disable.ubwc=1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -220,7 +223,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_gl_app_phase_offset_ns=15000000 \
     debug.sf.early_gl_phase_offset_ns=3000000 \
     debug.sf.early_phase_offset_ns=500000 \
-    debug.sf.enable_hwc_vds=0
+    debug.sf.enable_hwc_vds=1
 
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
