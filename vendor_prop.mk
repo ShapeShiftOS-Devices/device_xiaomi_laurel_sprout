@@ -130,6 +130,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display/Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.hw=0 \
     debug.egl.hw=0 \
     debug.mdpcomp.logs=0 \
     persist.hwc.enable_vds=1 \
