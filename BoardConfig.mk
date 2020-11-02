@@ -90,7 +90,7 @@ BOARD_SUPPORTS_QAHW := false
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 TARGET_USES_QCOM_MM_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
+USE_CUSTOM_AUDIO_POLICY := 0
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
@@ -192,7 +192,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
 
 # Sepolicy
-#include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/SEPolicy.mk
 
 #BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 #BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public

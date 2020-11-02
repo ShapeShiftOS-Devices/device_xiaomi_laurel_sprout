@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_laurel_sprout.mk
+    $(LOCAL_DIR)/ssos_laurel_sprout.mk

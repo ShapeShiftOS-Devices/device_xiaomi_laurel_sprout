@@ -126,7 +126,11 @@ PRODUCT_COPY_FILES += \
 
 # FOD Permissions
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/ssos/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
@@ -451,6 +455,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
+
+PRODUCT_BOARD_PLATFORM := sm8150
+PRODUCT_USES_QCOM_HARDWARE := true
+
 
 # Telephony
 PRODUCT_PACKAGES += \
