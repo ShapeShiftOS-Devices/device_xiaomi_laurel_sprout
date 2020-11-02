@@ -15,6 +15,8 @@ $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
+SSOS_BUILD_TYPE := OFFICIAL
+
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_WIFI_EXT := true

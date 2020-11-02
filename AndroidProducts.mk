@@ -6,3 +6,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/ssos_laurel_sprout.mk
+
+COMMON_LUNCH_CHOICES := \
+    ssos_laurel_sprout-user \
+    ssos_laurel_sprout-userdebug \
+    ssos_laurel_sprout-eng
