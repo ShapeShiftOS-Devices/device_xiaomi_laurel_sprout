@@ -561,14 +561,31 @@
     <!-- The default intensity level for haptic feedback. See
          Settings.System.HAPTIC_FEEDBACK_INTENSITY more details on the constant values and
          meanings. -->
-    <integer name="config_defaultHapticFeedbackIntensity">2</integer>
+    <integer name="config_defaultHapticFeedbackIntensity">1</integer>
     <!-- The default intensity level for notification vibrations. See
          Settings.System.NOTIFICATION_VIBRATION_INTENSITY more details on the constant values and
          meanings. -->
-    <integer name="config_defaultNotificationVibrationIntensity">2</integer>
+    <integer name="config_defaultNotificationVibrationIntensity">1</integer>
     <!-- The default intensity level for ring vibrations. See
          Settings.System.RING_VIBRATION_INTENSITY more details on the constant values and
          meanings. -->
     <integer name="config_defaultRingVibrationIntensity">2</integer>
+
+    <!-- Vibrator pattern for feedback about a long screen/key press -->
+   <integer-array name="config_longPressVibePattern">
+       <item>0</item>
+       <item>25</item> 
+       <item>10</item>
+   </integer-array>
+
+   <!-- Vibrator pattern for feedback about touching a virtual key -->
+   <integer-array name="config_virtualKeyVibePattern">
+       <item>0</item>
+       <item>25</item>
+       <item>8</item>
+   </integer-array>
+
+    <!-- Whether device has screen off FOD support -->
+    <bool name="config_supportScreenOffFod">true</bool>
 
 </resources>
